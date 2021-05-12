@@ -34,7 +34,7 @@ services:
         target: /usr/local/tomcat/webapps
       - type: bind
         source: ./Config.properties
-        target: /usr/local/tomcat/ROOT/
+        target: /usr/local/tomcat/ROOT/Config.properties
 
 volumes:
   data-war:
