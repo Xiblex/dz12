@@ -3,7 +3,7 @@ version: '3.8'
 services:
   buildapp:
     build:
-      context: ./buildapp
+      context: buildapp
     volumes:
       - type: volume
          source: share
