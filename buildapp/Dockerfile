@@ -8,6 +8,6 @@ RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample /App42Paa
 #  && mvn package -f /boxfuse/pom.xml
 #building war file
 WORKDIR /App42PaaS-Java-MySQL-Sample
-RUN wget wget https://raw.githubusercontent.com/Xiblex/dz12/master/buildapp/pom.xml -O /pom.xml
+RUN wget https://raw.githubusercontent.com/Xiblex/dz12/master/buildapp/pom.xml -O ./pom.xml
 RUN mvn clean && mvn install
 #CMD tail -f /dev/null
