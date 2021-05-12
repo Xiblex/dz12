@@ -1,1 +1,11 @@
-test
+---
+version: '3'
+volumes:
+  share:
+services:
+  buildapp:
+    build: buildapp
+    volumes:
+      - type: volume
+          source: share
+          target: /App42PaaS-Java-MySQL-Sample/target
