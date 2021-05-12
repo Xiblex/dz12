@@ -5,8 +5,8 @@ services:
     build: buildapp
     volumes:
       - type: volume
-        source: share
-        target: /App42PaaS-Java-MySQL-Sample/target
+         source: share
+         target: /App42PaaS-Java-MySQL-Sample/target
 
 volumes:
   share:
