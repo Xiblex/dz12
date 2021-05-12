@@ -1,7 +1,5 @@
 ---
 version: '3'
-volumes:
-  share:
 services:
   buildapp:
     build: buildapp
@@ -9,3 +7,6 @@ services:
       - type: volume
         source: share
         target: /App42PaaS-Java-MySQL-Sample/target
+
+volumes:
+  share:
