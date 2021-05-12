@@ -33,7 +33,7 @@ prod:
         source: data-war
         target: /usr/local/tomcat/webapps
       - type: bind
-        source: Config.properties
+        source: ./Config.properties
         target: /usr/local/tomcat/ROOT/
 
 volumes:
