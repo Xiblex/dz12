@@ -6,8 +6,8 @@ services:
       context: buildapp
     volumes:
       - type: volume
-         source: share
+         source: data
          target: /App42PaaS-Java-MySQL-Sample/target
 
 volumes:
-  share:
+  data:
