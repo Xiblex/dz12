@@ -24,8 +24,17 @@ services:
       - "3306:3306"
     expose:
       - "3306"
-#  Prod:
-#    image: tomcat
+prod:
+    image: tomcat:9.0
+    ports:
+      - "80:8080"
+    volumes:
+      - type: volume
+        source: data-war
+        target: /usr/local/tomcat/webapps
+      - type: bind
+        source: Config.properties
+        target: /usr/local/tomcat/ROOT/
 
 volumes:
   data-war:
