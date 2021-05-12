@@ -9,5 +9,5 @@ RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample /App42Paa
 #building war file
 WORKDIR /App42PaaS-Java-MySQL-Sample
 RUN wget https://raw.githubusercontent.com/Xiblex/dz12/master/buildapp/pom.xml -O ./pom.xml
-RUN mvn clean && mvn install
+RUN mvn clean && mvn package
 CMD tail -f /dev/null
