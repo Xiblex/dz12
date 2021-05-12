@@ -9,4 +9,4 @@ RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample /App42Paa
 #building war file
 WORKDIR /App42PaaS-Java-MySQL-Sample
 RUN mvn clean && mvn install
-CMD tail -f /dev/null
+#CMD tail -f /dev/null
