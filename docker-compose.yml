@@ -18,8 +18,8 @@ services:
       - MYSQL_PASSWORD=Tt123456
     volumes:
       - type: volume
-          source: data-db
-          target: /App42PaaS-Java-MySQL-Sample/target
+        source: data-db
+        target: /App42PaaS-Java-MySQL-Sample/target
     ports:
       - "3306"
 #  Prod:
