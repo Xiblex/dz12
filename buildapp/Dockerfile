@@ -7,6 +7,6 @@ RUN apt-get update \
 RUN git clone https://github.com/shephertz/App42PaaS-Java-MySQL-Sample /App42PaaS-Java-MySQL-Sample
 #  && mvn package -f /boxfuse/pom.xml
 #building war file
-WORKDIR App42PaaS-Java-MySQL-Sample
+WORKDIR /App42PaaS-Java-MySQL-Sample
 RUN mvn clean && mvn install
 CMD tail -f /dev/null
