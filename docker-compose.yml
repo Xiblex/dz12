@@ -9,7 +9,7 @@ services:
         source: data-war
         target: /tmp/war
   bd:
-    image: mysql:5.7
+    image: mysql
     restart: always
     command: --default-authentication-plugin=mysql_native_password
     environment:
